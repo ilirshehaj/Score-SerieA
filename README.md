@@ -28,7 +28,7 @@ Each sheet will consist of a table with these columns:
 4.Result (W - Win, D-Draw, L-Loss)
 ```
 
-##Execution
+## Execution
 The program will be executed through cmd/terminal.  
 After navigating to the Project folder, execute the command:
 ```
