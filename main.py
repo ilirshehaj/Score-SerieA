@@ -15,7 +15,7 @@ def main():
     #create new driver
     driver = webdriver.Chrome()
     # Get HTML    
-    html = f.get_html(seriea_page, driver)
+    html, driver = f.get_html(seriea_page, driver)
     # Import global variables
     team_link = gl.team_link
     rank_class = gl.rank_class
@@ -57,7 +57,7 @@ def main():
         href = teams[0].findAll('a', href=True)[count]['href']
         link = 'https://www.sofascore.com' + href
         # Get HTML
-        html = f.get_html(link, driver)
+        html, driver = f.get_html(link, driver)
         matches = html.find_all('div', attrs={'class': match_details})
         index=0
         for match in matches:
